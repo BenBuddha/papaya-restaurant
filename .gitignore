@@ -1,0 +1,4 @@
+.env
+node_modules
+
+/* Making sure node depencies doesn't get uploaded on git, since there could be sensitive information*/

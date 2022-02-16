@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Papayas Restaurang- Hitta oss</title>
+        <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Cardo" rel="stylesheet" type="text/css" />
+        <link href="../public/assets/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/37b7c2e3b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="../public/assets/navigation.js" defer></script>
+        <script type="text/javascript" src="../public/assets/formlistener.js" defer></script>
+        <script type="text/javascript" src="../public/assets/bodycontact.js" defer></script>
+    </head>
+    <header>
+        <div class="main_s">
+            <div class="row">
+                <a class="logo" href="/"> <img src="../public/assets/papaya_logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Hem</a></li>
+                        <li><a href="/veckans-meny">Veckans Meny</a></li>
+                        <li><a href="/bestallning">Beställning</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- / row -->
+        </div>
+
+        <div class="mobile-header">
+            <a class="mobile-logo" href="www.papayarestaurang.se"><img src="../public/assets/papaya_logo.png" alt=""></a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/">Hem</a></li>
+                    <li><a href="/veckans-meny">Veckans Meny</a></li>
+                    <li><a href="/bestallning">Beställning</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <div class="spacing"></div>
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3400.177484057232!2d14.075950498625849!3d59.30944208372109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ad93eeda7b29099!2sPapaya%20Restaurang!5e0!3m2!1sen!2sth!4v1642145007126!5m2!1sen!2sth"
+                width="100%"
+                height="440"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+            ></iframe>
+        </div>
+        <div class="container">
+            <div class="wrap">
+                <div class="left-side">
+                    <div class="store details">
+                        <i class="fas fa-store"></i>
+                        <div class="topic">Öppettider</div>
+                        <div class="text-one">Måndag – Fredag</div>
+                        <div class="text-two">11:00 – 14:30</div>
+                    </div>
+                    <div class="lunch details">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <div class="topic">Telefon & E-post</div>
+                        <div class="text-one">070-7265580</div>
+                        <div class="text-two"><a href="mailto:nopparat66@msn.com">nopparat66@msn.com</a></div>
+                    </div>
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Adress</div>
+                        <div class="text-one">Fiskartorpsvägen 2</div>
+                        <div class="text-two">68154 Kristinehamn</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text" id="topic-text">Skicka oss ett meddelande</div>
+                    <form id="contact_form" action="https://formsubmit.co/ajax/ben.skoglund@live.se" method="POST">
+                        <div class="input-box">
+                            <input type="text" name="name" placeholder="Ditt namn" required />
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" placeholder="Din e-post" required />
+                        </div>
+                        <textarea required class="input-box message-box form-control" rows="4" cols="50" name="message" placeholder="Meddelande"></textarea>
+                        <button type="submit" class="button" id="nextStep" onclick="this.classList.toggle('button--loading')"><span class="button__text">Skicka</span></button>
+                    </form>
+
+                    <div id="thank_you" style="display: none;">
+                        <p>Tack! Vi svarar på din förfrågan så fort vi kan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Site footer -->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://www.facebook.com/Papaya-Restaurang-310141932482911"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:nopparat66@msn.com"><i class="fas fa-envelope-square"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="" href="/">Hem</a>
+                <a href="/veckans-menyveckans-meny">Veckans Meny</a>
+                <a href="/bestallning">Beställning</a>
+                <a href="/kontakt">Kontakt</a>
+            </p>
+            <p>Created by Ben Skoglund &copy; 2022</p>
+        </div>
+    </footer>
+    </body>
+</html>

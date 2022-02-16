@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Papaya Restaurang Redigera</title>
+        <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Cardo" rel="stylesheet" type="text/css" />
+        <link href="../../public/assets/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/37b7c2e3b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="../public/assets/navigation.js" defer></script>
+    </head>
+
+<body>
+    <header>
+        <div class="main_s">
+            <div class="row">
+                <a class="logo" href="/"> <img src="../public/assets/papaya_logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Hem</a></li>
+                        <li><a href="/veckans-meny">Veckans Meny</a></li>
+                        <li><a href="/bestallning">Beställning</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- / row -->
+        </div>
+
+        <div class="mobile-header">
+            <a class="mobile-logo" href="/"><img src="../public/assets/papaya_logo.png" alt=""></a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/">Hem</a></li>
+                    <li><a href="/veckans-meny">Veckans Meny</a></li>
+                    <li><a href="/bestallning">Beställning</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="row content">
+        <section id="show">
+        <h3>Dina ändringar är nu sparade!</h3>
+    <!--<p>Lunch Buffé</p>
+        <p><%= meny.vecka %></p>
+        <p>Kl. 11:000 - 14:30</p>
+        <p>Måndag</p>
+        <p><%= meny.mondag1 %></p>
+        <p><%= meny.mondag2 %></p>
+        <p><%= meny.mondag3 %></p>
+        <p>Tisdag</p>
+        <p><%= meny.tisdag1 %></p>
+        <p><%= meny.tisdag2 %></p>
+        <p><%= meny.tisdag3 %></p>
+        <p>Onsdag</p>
+        <p><%= meny.onsdag1 %></p>
+        <p><%= meny.onsdag2 %></p>
+        <p><%= meny.onsdag3 %></p>
+        <p>Torsdag</p>
+        <p><%= meny.torsdag1 %></p>
+        <p><%= meny.torsdag2 %></p>
+        <p><%= meny.torsdag3 %></p>
+        <p>Fredag</p>
+        <p><%= meny.fredag1 %></p>
+        <p><%= meny.fredag2 %></p>
+        <p><%= meny.fredag3 %></p>
+        <p>Inkl; sallad buffé, bröd, kaffe och måltidsdryck</p>
+
+        <p>Dagens</p>
+        <h3><%= meny.dagdatum %></h3>
+        <p><%= meny.dagens1 %></p>
+        <p><%= meny.dagens2 %></p>
+        <p><%= meny.dagens3 %></p> -->
+        <button><a href="/admin" class="button">Tillbaka</a></button>
+        <button><a href="/veckans-meny" class="button">Visa Menyn</a></button>
+        </section>
+    </div>
+
+</body>
+</html>

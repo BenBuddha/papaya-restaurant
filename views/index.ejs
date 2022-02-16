@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Papayas Restaurang - Husmanskost och Lunch Buffé i Kristinehamn</title>
+        <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Cardo" rel="stylesheet" type="text/css" />
+        <link href="../public/assets/style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/37b7c2e3b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="../public/assets/navigation.js" defer></script>
+        <script type="text/javascript" src="../public/assets/indexbody.js" defer></script>
+        <script type="text/javascript" src="../public/assets/modal.js" defer></script>
+    </head>
+
+<body class="">
+    <header>
+        <div class="main_h">
+            <div class="row">
+                <a class="logo" href="/"> <img src="../public/assets/papaya_logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Hem</a></li>
+                        <li><a href="/veckans-meny">Veckans Meny</a></li>
+                        <li><a href="/bestallning">Beställning</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- / row -->
+        </div>
+
+        <div class="mobile-header">
+            <a class="mobile-logo" href="www.papayarestaurang.se"><img src="../public/assets/papaya_logo.png" alt=""></a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/">Hem</a></li>
+                    <li><a href="/veckans-meny">Veckans Meny</a></li>
+                    <li><a href="/bestallning">Beställning</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="bg_images"></div>
+        <img src="../public/assets/papaya_splash.png" id="logo-full" alt="">
+        
+        <h1> VARMT VÄLKOMNA TILL OSS</h1>
+        <p class="heronav">
+            <a class="herolinks" href="/veckans-meny">VECKANS MENY</a>
+            <a class="herolinks" href="/bestallning">BESTÄLLNING</a>
+            <a class="herolinks" href="/kontakt">HITTA OSS</a>
+        </p>
+    </div>
+    <div id="lead-location">
+        <h4>
+            <a href="/kontakt" class=""><i class="fas fa-map-marker-alt">
+            </i> &nbsp; Här hittar du vägbeskrivning till oss &nbsp; <i class="fas fa-arrow-right"></i></a>
+        </h4>
+    </div>
+    <div class="row content">
+        <div class="dagens-wrap">
+            <div class="dagens-left">
+                <h2 class="">VÄLLAGAT VARJE VARDAG</h2>
+                <p>Dagligen erbjuder Papaya tre olika lunchrätter som består av två svenska husmansrätter samt en thailändskt.
+                <br><br>
+                Med Buffén inkluderas salladsbar med varierande utbud av råkost, måltidsdryck, samt bröd och kaffe.</p>
+                <p><a class="button" href="/veckans-meny">Se veckans meny &nbsp;<i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            <div class="dagens-right">
+                <div class="">
+                    <h3 class="">Dagens Lunchbuffé</h3>
+                    <% meny.forEach(meny => { %>
+                        <div>
+                            <h1><span>— </span><%= meny.dagdatum %><span> —</span> </h1>
+                            <p><%= meny.dagens1 %></p>
+                            <p><%= meny.dagens2 %></p>
+                            <p><%= meny.dagens3 %></p>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        <div class="leaders">
+            <a href="/bestallning" class="home-lead" style="background-image:url('../public/assets/lead_bestall.jpg');background-color:#f9c54b">
+                <h2>VÅRA BERÖMDA <br>SMÖRGÅSTÅRTOR</h2>
+                <p></p>
+                <p class="button-text">Beställ här</p>
+            </a>
+            <a href="https://www.facebook.com/Papaya-Restaurang-310141932482911" class="home-lead" style="background-image:url('../public/assets/lead_center.jpg');background-color:#000">
+                <h2>FÖLJ OSS PÅ FACEBOOK</h2>
+                <p></p>
+                <p class="button-text">För senaste händelser</p>
+            </a>
+            <a href="" class="home-lead open-modal" onclick="return false" style="background-image:url('../public/assets/lead_kupong.jpg');background-color:#c34712">
+                <h2>SKAFFA </br> LUNCHKUPONG</h2>
+                <p></p>
+                <p class="button-text">Billigare luncher för</br>våra stammisar</p>
+            </a>
+        </div>
+    </div>
+    <div id="lead-location" style="background-color: #f9c54b;">
+        <h4>
+            <a href="#" class="" ><i class="fas fa-phone-square-alt">
+            </i><span>&nbsp; 070-7265580 &nbsp;</span> <i class="fas fa-map-marker-alt"> &nbsp;<span style="font-family: 'Outfit', sans-serif; font-weight: 400;" >Fiskartorpsvägen 2, 68154 Kristinehamn</span></i></a>
+        </h4>
+    </div>
+	<!-- Site footer -->
+	<footer class="footer-distributed">
+		<div class="footer-right"> <a href="https://www.facebook.com/Papaya-Restaurang-310141932482911"><i class="fa fa-facebook"></i></a>
+			<a href="mailto:nopparat66@msn.com"><i class="fas fa-envelope-square"></i></a>
+		</div>
+		<div class="footer-left">
+			<p class="footer-links"> <a class="" href="/">Hem</a>
+				<a href="/veckans-meny">Veckans Meny</a>
+				<a href="/bestallning">Beställning</a>
+				<a href="/kontakt">Kontakt</a>
+			</p>
+			<p>Created by Ben Skoglund &copy; 2022</p>
+		</div>
+	</footer>
+</body>
+</html>

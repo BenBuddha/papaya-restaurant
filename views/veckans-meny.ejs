@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Papayas Restaurang - Veckans meny</title>
+        <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Cardo" rel="stylesheet" type="text/css" />
+        <link href="../public/assets/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://kit.fontawesome.com/37b7c2e3b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="../public/assets/navigation.js" defer></script>
+        <script type="text/javascript" src="../public/assets/bodyclass.js" defer></script>
+    </head>
+
+<body class="">
+    <header>
+        <div class="main_s">
+            <div class="row">
+                <a class="logo" href="/"> <img src="../public/assets/papaya_logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Hem</a></li>
+                        <li><a href="/veckans">Veckans Meny</a></li>
+                        <li><a href="/bestallning">Beställning</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- / row -->
+        </div>
+
+        <div class="mobile-header">
+            <a class="mobile-logo" href="www.papayarestaurang.se"><img src="../public/assets/papaya_logo.png" alt=""></a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/">Hem</a></li>
+                    <li><a href="/veckans">Veckans Meny</a></li>
+                    <li><a href="/bestallning">Beställning</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="row-veckans content menus" onload="document.body.style.opacity='1'">
+        
+        <% meny.forEach(meny => { %>
+            <div>
+                <h3 class="menunderline">Lunch Buffé</h3>
+                <h2><%= meny.vecka %></h2>
+                <p>Kl. 11:00 - 14:30</p>
+            </br>
+                <h3>— Måndag —</h3>
+                <p><%= meny.mondag1 %></p>
+                <p><%= meny.mondag2 %></p>
+                <p><%= meny.mondag3 %></p>
+            </br>
+                <h3>— Tisdag —</h3>
+                <p><%= meny.tisdag1 %></p>
+                <p><%= meny.tisdag2 %></p>
+                <p><%= meny.tisdag3 %></p>
+            </br>
+                <h3>— Onsdag —</h3>
+                <p><%= meny.onsdag1 %></p>
+                <p><%= meny.onsdag2 %></p>
+                <p><%= meny.onsdag3 %></p>
+            </br>
+                <h3>— Torsdag —</h3>
+                <p><%= meny.torsdag1 %></p>
+                <p><%= meny.torsdag2 %></p>
+                <p><%= meny.torsdag3 %></p>
+            </br>
+                <h3>— Fredag —</h3>
+                <p><%= meny.fredag1 %></p>
+                <p><%= meny.fredag2 %></p>
+                <p><%= meny.fredag3 %></p>
+                </br></br>
+                <p>Inkl: sallad buffé, bröd, kaffe och måltidsdryck</p>
+            </div>
+        <% }) %>
+
+        <!--<ul class="social-accounts">
+            <li><a href="https://www.facebook.com/Gramercy-Tavern-113135062061277/timeline/" target="_blank" rel="noopener" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Social Icons" data-bb-track-action="Click" data-bb-track-label="Facebook, Footer" aria-label="Facebook" aria-describedby="audioeye_new_window_message"><span class="fa fa-facebook" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/GramercyTavern" target="_blank" rel="noopener" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Social Icons" data-bb-track-action="Click" data-bb-track-label="Twitter, Footer" aria-describedby="audioeye_new_window_message"><span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span></a></li>
+            <li><a href="http://instagram.com/gramercytavern" target="_blank" rel="noopener" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Social Icons" data-bb-track-action="Click" data-bb-track-label="Instagram, Footer" aria-describedby="audioeye_new_window_message"><span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
+        </ul> -->
+    </div>
+        <!-- Site footer -->
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="https://www.facebook.com/Papaya-Restaurang-310141932482911"><i class="fa fa-facebook"></i></a>
+                <a href="mailto:nopparat66@msn.com"><i class="fas fa-envelope-square"></i></a>
+            </div>
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a class="" href="/">Hem</a>
+                    <a href="/veckans">Veckans Meny</a>
+                    <a href="/bestallning">Beställning</a>
+                    <a href="/kontakt">Kontakt</a>
+                </p>
+                <p>Created by Ben Skoglund &copy; 2022</p>
+            </div>
+        </footer>
+</body>
+</html>
