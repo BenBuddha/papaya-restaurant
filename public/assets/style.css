@@ -343,11 +343,17 @@ ul li:hover {
 .hero {
   background-image: url(banner-home-1-lazy.jpg);
 }
+
+.hero.visible {
+  animation: slidebg 15s linear infinite 0s;
+
+  background-image: url(banner-home-1.jpg);
+}
 @keyframes slidebg {
   0% {
     background-image: url(banner-home-1.jpg);
   }
-  23% {
+  22% {
     background-image: url(banner-home-1.jpg);
   }
   33% {
@@ -362,12 +368,6 @@ ul li:hover {
   90% {
     background-image: url(banner-home-3.jpg);
   }
-}
-
-.hero.visible {
-  animation: slidebg 15s linear infinite 0s;
-  animation-timing-function: ease-in-out;
-  background-image: url(banner-home-1.jpg);
 }
 
 /* Image Slider End    */
