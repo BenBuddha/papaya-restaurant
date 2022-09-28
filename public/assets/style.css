@@ -680,6 +680,13 @@ textarea {
   align-items: center;
   justify-content: space-between;
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.mt-100 {
+  margin-top: 1rem; 
+}
 .container .wrap .left-side {
   width: 25%;
   height: 100%;
