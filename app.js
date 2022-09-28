@@ -3,10 +3,15 @@ const mongoose = require("mongoose");
 const Meny = require("./models/meny");
 const menuRouter = require("./routes/menyer");
 const methodOverride = require("method-override");
+const enforce = require("express-sslify");
 
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 // Login & register Auth Dependencies
 const session = require("express-session");
 const app = express();
+
+// Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
+// a load balancer (e.g. Heroku). See further comments below
 
 //Connect to the database
 mongoose.connect(
