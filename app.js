@@ -3,13 +3,10 @@ const mongoose = require("mongoose");
 const Meny = require("./models/meny");
 const menuRouter = require("./routes/menyer");
 const methodOverride = require("method-override");
-const secure = require("ssl-express-www");
 
 // Login & register Auth Dependencies
 const session = require("express-session");
 const app = express();
-
-app.use(secure);
 
 //Connect to the database
 mongoose.connect(
