@@ -103,7 +103,7 @@ app.get("/logout", (req, res) => {
 
 app.use("/admin", menuRouter);
 
-PORT = process.env.PORT || 5000;
+PORT = process.env.PORT || 5300;
 app.listen(PORT);
-console.log("App running at http://localhost:5000");
+console.log("App running at http://localhost:5300");
 // Hi
