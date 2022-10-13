@@ -7,7 +7,9 @@ Graphical haeder font-family: 'Outfit', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap");
 /* paragraph texts 
 Menu font style font-family: 'Cormorant Garamond', serif;*/
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* Jubileum texts
+Image font style font-family: 'Courgette', cursive; */
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
@@ -20,13 +22,14 @@ Menu font style font-family: 'Cormorant Garamond', serif;*/
   --herofont: "Alfa Slab One", cursive;
   --ffamily: "Outfit", sans-serif;
   --fmenu: "Cormorant Garamond", serif;
+  --fanniv: "Courgette", cursive;
   /* font-sizes */
   --fs-600: 1.9rem;
   --fs-500: 1.55rem;
   --fs-400: 1.2rem;
   --fs-300: 1rem;
   --logo-fs: 1.875rem;
-  --fs-hero: 6.3vh;
+  --fs-hero: 5vh;
   /* font-colors */
   --font-clr: #000;
 }
@@ -132,7 +135,6 @@ html {
 }
 .row {
   width: 100%;
-  max-width: 75em;
   margin: 0 auto;
   position: relative;
   padding: 0 2%;
@@ -271,7 +273,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .content {
-  padding: 3.75em 10vh 10vh;
+  padding: 2em 10vh 10vh;
   position: relative;
 }
 a {
@@ -433,6 +435,28 @@ ul li:hover {
 /* ------------------- */
 /* Content Below Hero  */
 /* ------------------- */
+
+.jubileum {
+  background-image: url("cake2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  margin-bottom: 1rem;
+  min-height: 6em;
+  padding: 5% 1.25em 2em 1.25em;
+}
+
+.jubileum h3 {
+  font-family: var(--fanniv);
+  font-size: 2rem;
+}
+.jubileum p {
+  line-height: 1.1;
+  margin: 1em 0;
+}
 
 .dagens-wrap {
   display: flex;
@@ -1346,4 +1370,10 @@ For submitting contact form*/
   margin: 1.66rem 1rem 0 1rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.66em;
+}
+@media (max-width: 950px) {
+  .jubileum p span {
+    font-size: 1rem;
+    
+  }
 }
