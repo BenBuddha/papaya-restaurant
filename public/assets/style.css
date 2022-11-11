@@ -7,7 +7,7 @@ Graphical haeder font-family: 'Outfit', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap");
 /* paragraph texts 
 Menu font style font-family: 'Cormorant Garamond', serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 /* Jubileum texts
 Image font style font-family: 'Courgette', cursive; */
 /* ------------------- */
@@ -709,7 +709,7 @@ textarea {
   justify-content: space-between;
 }
 .mt-100 {
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 .container .wrap .left-side {
   width: 25%;
@@ -1121,6 +1121,13 @@ textarea {
   padding-bottom: 1.5rem;
 }
 
+h3.closed-message {
+  margin-top: 2rem;
+}
+.menunderline {
+  text-decoration: underline;
+}
+
 .kuponger {
   width: 100%;
   background-color: #fff;
@@ -1374,6 +1381,5 @@ For submitting contact form*/
 @media (max-width: 950px) {
   .jubileum p span {
     font-size: 1rem;
-    
   }
 }
