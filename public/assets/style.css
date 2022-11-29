@@ -472,7 +472,7 @@ ul li:hover {
 }
 .dagens-wrap .dagens-right {
   width: 63%;
-  padding-top: 3.5rem;
+  padding: 3.5rem 0;
   color: #fff;
   background-image: url(dagenslunch.jpg);
   text-align: center;
@@ -481,7 +481,6 @@ ul li:hover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  max-height: 500px;
 }
 .dagens-wrap .dagens-left h2,
 .banner-story .banner-left h2 {
@@ -945,6 +944,8 @@ textarea {
   .dagens-wrap .dagens-left h2 {
     font-size: 1.4rem;
   }
+  .dagens-wrap .dagens-right {
+    padding-bottom: 1.5rem;
 }
 
 /*Footer styling*/
