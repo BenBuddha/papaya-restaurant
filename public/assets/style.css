@@ -946,8 +946,8 @@ textarea {
   }
   .dagens-wrap .dagens-right {
     padding-bottom: 1.5rem;
+  }
 }
-
 /*Footer styling*/
 .footer-distributed {
   background-color: var(--header-color);
