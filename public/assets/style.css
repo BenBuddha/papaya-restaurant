@@ -645,6 +645,18 @@ textarea {
   background-image: url(foodbg.jpg); /* The final image */
 }
 
+.julbordbg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(julbordbg-lazy.jpg);
+}
+
+.julbordbg.visible {
+  background-image: url(julbordbg.jpg); /* The final image */
+}
+
 .menus {
   margin-top: 72px;
   padding-bottom: 3rem;

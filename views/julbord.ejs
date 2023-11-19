@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Papayas Restaurang - Veckans meny</title>
+        <title>Papayas Restaurang - Julbord</title>
         <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
         
         <link href="../public/assets/style.css" rel="stylesheet" type="text/css" />
@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/37b7c2e3b6.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="../public/assets/navigation.js" defer></script>
-        <script type="text/javascript" src="../public/assets/bodyclass.js" defer></script>
+        <script type="text/javascript" src="../public/assets/julbordclass.js" defer></script>
     </head>
 
 <body class="">
@@ -52,40 +52,33 @@
 
     <div class="row-veckans content menus" onload="document.body.style.opacity='1'">
         
-        <% meny.forEach(meny => { %>
-            <div>
-                <h3 class="menunderline">Lunch Buffé</h3>
-                <h2><%= meny.vecka %></h2>
-                <p>Kl. 11:00 - 14:30</p>
-            </br>
-                <h3>— Måndag —</h3>
-                <p><%= meny.mondag1 %></p>
-                <p><%= meny.mondag2 %></p>
-                <p><%= meny.mondag3 %></p>
-            </br>
-                <h3>— Tisdag —</h3>
-                <p><%= meny.tisdag1 %></p>
-                <p><%= meny.tisdag2 %></p>
-                <p><%= meny.tisdag3 %></p>
-            </br>
-                <h3>— Onsdag —</h3>
-                <p><%= meny.onsdag1 %></p>
-                <p><%= meny.onsdag2 %></p>
-                <p><%= meny.onsdag3 %></p>
-            </br>
-                <h3>— Torsdag —</h3>
-                <p><%= meny.torsdag1 %></p>
-                <p><%= meny.torsdag2 %></p>
-                <p><%= meny.torsdag3 %></p>
-            </br>
-                <h3>— Fredag —</h3>
-                <p><%= meny.fredag1 %></p>
-                <p><%= meny.fredag2 %></p>
-                <p><%= meny.fredag3 %></p>
-                </br></br>
-                <p>Inkl: sallad buffé, bröd, kaffe och måltidsdryck</p>
-            </div>
-        <% }) %>
+        <h3 class="menunderline">Julbord - den 19 december</h3>
+        <p>Kl. 17:00 - 20:00</p>
+    </br>
+        <h3>— Meny —</h3>
+        <p>Välkomna till årets julbord hos oss</p>
+        <p>Njut av våra smakrika urval av varma och kalla rätter, samt god efterätt</p>
+    </br></br>
+        <p>Inkl: sallad, bröd, kaffe, julmust, måltidsdryck med mera.</p>
+    </br>
+        <h3>— Enbart förbokning —</h3>
+        <p>Boka på: 070-7265580 </p>
+        <p>Pris: 365 kr </p>
+    </br>
+</br></br>
+    <h3> Välkomna! </h3>
+        <!-- <h3>— Onsdag —</h3>
+    </br>
+        <h3>— Torsdag —</h3>
+    </br>
+        <h3>— Fredag —</h3> -->
+
+        </br></br>
+
+    </br></br>
+    </br></br>
+    </br></br>
+    </div>
 
     </div>
         <!-- Site footer -->

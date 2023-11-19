@@ -92,6 +92,10 @@ app.get("/veckans-meny", async (req, res) => {
   res.render("veckans-meny", { meny: meny });
 });
 
+app.get("/julbord", async (req, res) => {
+  res.render("julbord");
+});
+
 app.get("/kontakt", (req, res) => {
   res.render("kontakt");
 });
